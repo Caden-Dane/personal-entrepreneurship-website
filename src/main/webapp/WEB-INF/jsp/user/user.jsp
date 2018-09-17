@@ -7,16 +7,20 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<p>Hello XBJ !</p>
-	<div id="showDiv"></div>
-	<input type="button" value="显示" onclick="show()">
+	用户名：<input type="text" id="userName">
+	<input type="button" value="查找" onclick="search()">
+	<div id="showUser"></div>
+	
 </body>
 <script type="text/javascript">
-	function show(){
-		var header = document.getElementById("headerDiv");
-		var show = document.getElementById("showDiv");
-		show.innerHTML = header.innerHTML;
+	function search(){
+		var div = document.getElementById("showUser");
+		var userName = document.getElementById("userName");
+		
 	}
-
+	
+	
+	
 </script>
+
 </html>

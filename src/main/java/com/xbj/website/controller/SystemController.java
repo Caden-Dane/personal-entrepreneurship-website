@@ -2,6 +2,7 @@ package com.xbj.website.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 /** 
  * @Description 主页的Controller
@@ -14,10 +15,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 public class SystemController {
-
-	@RequestMapping(value = "main.htm")
-	public String showMain(){
-		return "main";
-	}
 	
+	
+	@RequestMapping(value = "main.htm", method=RequestMethod.GET)
+    public String home() {
+		
+        return "main_JSP";  
+    }
 }
